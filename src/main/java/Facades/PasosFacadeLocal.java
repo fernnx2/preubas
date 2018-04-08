@@ -6,7 +6,6 @@
 package Facades;
 
 import Entitys.Pasos;
-import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,20 +13,7 @@ import javax.ejb.Local;
  * @author fernando
  */
 @Local
-public interface PasosFacadeLocal {
+public interface PasosFacadeLocal extends AbstractInterface<Pasos>{
 
-    void create(Pasos pasos);
-
-    void edit(Pasos pasos);
-
-    void remove(Pasos pasos);
-
-    Pasos find(Object id);
-
-    List<Pasos> findAll();
-
-    List<Pasos> findRange(int[] range);
-
-    int count();
     
 }

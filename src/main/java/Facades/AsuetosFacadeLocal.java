@@ -6,7 +6,6 @@
 package Facades;
 
 import Entitys.Asuetos;
-import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,20 +13,7 @@ import javax.ejb.Local;
  * @author fernando
  */
 @Local
-public interface AsuetosFacadeLocal {
+public interface AsuetosFacadeLocal extends AbstractInterface<Asuetos>{
 
-    void create(Asuetos asuetos);
-
-    void edit(Asuetos asuetos);
-
-    void remove(Asuetos asuetos);
-
-    Asuetos find(Object id);
-
-    List<Asuetos> findAll();
-
-    List<Asuetos> findRange(int[] range);
-
-    int count();
     
 }

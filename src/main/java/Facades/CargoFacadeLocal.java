@@ -6,7 +6,6 @@
 package Facades;
 
 import Entitys.Cargo;
-import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,20 +13,7 @@ import javax.ejb.Local;
  * @author fernando
  */
 @Local
-public interface CargoFacadeLocal {
+public interface CargoFacadeLocal extends AbstractInterface<Cargo>{
 
-    void create(Cargo cargo);
-
-    void edit(Cargo cargo);
-
-    void remove(Cargo cargo);
-
-    Cargo find(Object id);
-
-    List<Cargo> findAll();
-
-    List<Cargo> findRange(int[] range);
-
-    int count();
     
 }

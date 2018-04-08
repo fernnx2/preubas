@@ -6,7 +6,6 @@
 package Facades;
 
 import Entitys.Diagnostico;
-import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,20 +13,7 @@ import javax.ejb.Local;
  * @author fernando
  */
 @Local
-public interface DiagnosticoFacadeLocal {
+public interface DiagnosticoFacadeLocal extends AbstractInterface<Diagnostico>{
 
-    void create(Diagnostico diagnostico);
-
-    void edit(Diagnostico diagnostico);
-
-    void remove(Diagnostico diagnostico);
-
-    Diagnostico find(Object id);
-
-    List<Diagnostico> findAll();
-
-    List<Diagnostico> findRange(int[] range);
-
-    int count();
     
 }

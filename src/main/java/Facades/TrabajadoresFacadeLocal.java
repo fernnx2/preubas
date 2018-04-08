@@ -6,7 +6,6 @@
 package Facades;
 
 import Entitys.Trabajadores;
-import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,20 +13,7 @@ import javax.ejb.Local;
  * @author fernando
  */
 @Local
-public interface TrabajadoresFacadeLocal {
+public interface TrabajadoresFacadeLocal extends AbstractInterface<Trabajadores>{
 
-    void create(Trabajadores trabajadores);
-
-    void edit(Trabajadores trabajadores);
-
-    void remove(Trabajadores trabajadores);
-
-    Trabajadores find(Object id);
-
-    List<Trabajadores> findAll();
-
-    List<Trabajadores> findRange(int[] range);
-
-    int count();
     
 }

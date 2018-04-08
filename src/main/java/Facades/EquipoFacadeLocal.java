@@ -6,7 +6,6 @@
 package Facades;
 
 import Entitys.Equipo;
-import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,20 +13,7 @@ import javax.ejb.Local;
  * @author fernando
  */
 @Local
-public interface EquipoFacadeLocal {
+public interface EquipoFacadeLocal extends AbstractInterface<Equipo>{
 
-    void create(Equipo equipo);
-
-    void edit(Equipo equipo);
-
-    void remove(Equipo equipo);
-
-    Equipo find(Object id);
-
-    List<Equipo> findAll();
-
-    List<Equipo> findRange(int[] range);
-
-    int count();
     
 }

@@ -6,7 +6,6 @@
 package Facades;
 
 import Entitys.OrdenTrabajoPorTrabajadores;
-import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,20 +13,7 @@ import javax.ejb.Local;
  * @author fernando
  */
 @Local
-public interface OrdenTrabajoPorTrabajadoresFacadeLocal {
+public interface OrdenTrabajoPorTrabajadoresFacadeLocal extends AbstractInterface<OrdenTrabajoPorTrabajadores>{
 
-    void create(OrdenTrabajoPorTrabajadores ordenTrabajoPorTrabajadores);
-
-    void edit(OrdenTrabajoPorTrabajadores ordenTrabajoPorTrabajadores);
-
-    void remove(OrdenTrabajoPorTrabajadores ordenTrabajoPorTrabajadores);
-
-    OrdenTrabajoPorTrabajadores find(Object id);
-
-    List<OrdenTrabajoPorTrabajadores> findAll();
-
-    List<OrdenTrabajoPorTrabajadores> findRange(int[] range);
-
-    int count();
     
 }

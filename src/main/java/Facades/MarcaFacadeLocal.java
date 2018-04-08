@@ -6,7 +6,6 @@
 package Facades;
 
 import Entitys.Marca;
-import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,20 +13,7 @@ import javax.ejb.Local;
  * @author fernando
  */
 @Local
-public interface MarcaFacadeLocal {
+public interface MarcaFacadeLocal extends AbstractInterface<Marca>{
 
-    void create(Marca marca);
-
-    void edit(Marca marca);
-
-    void remove(Marca marca);
-
-    Marca find(Object id);
-
-    List<Marca> findAll();
-
-    List<Marca> findRange(int[] range);
-
-    int count();
     
 }

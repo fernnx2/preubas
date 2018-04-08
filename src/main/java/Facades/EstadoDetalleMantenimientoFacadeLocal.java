@@ -6,7 +6,6 @@
 package Facades;
 
 import Entitys.EstadoDetalleMantenimiento;
-import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,20 +13,7 @@ import javax.ejb.Local;
  * @author fernando
  */
 @Local
-public interface EstadoDetalleMantenimientoFacadeLocal {
+public interface EstadoDetalleMantenimientoFacadeLocal extends AbstractInterface<EstadoDetalleMantenimiento>{
 
-    void create(EstadoDetalleMantenimiento estadoDetalleMantenimiento);
-
-    void edit(EstadoDetalleMantenimiento estadoDetalleMantenimiento);
-
-    void remove(EstadoDetalleMantenimiento estadoDetalleMantenimiento);
-
-    EstadoDetalleMantenimiento find(Object id);
-
-    List<EstadoDetalleMantenimiento> findAll();
-
-    List<EstadoDetalleMantenimiento> findRange(int[] range);
-
-    int count();
     
 }

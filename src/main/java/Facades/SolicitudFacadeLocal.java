@@ -6,7 +6,6 @@
 package Facades;
 
 import Entitys.Solicitud;
-import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,20 +13,7 @@ import javax.ejb.Local;
  * @author fernando
  */
 @Local
-public interface SolicitudFacadeLocal {
+public interface SolicitudFacadeLocal extends AbstractInterface<Solicitud>{
 
-    void create(Solicitud solicitud);
-
-    void edit(Solicitud solicitud);
-
-    void remove(Solicitud solicitud);
-
-    Solicitud find(Object id);
-
-    List<Solicitud> findAll();
-
-    List<Solicitud> findRange(int[] range);
-
-    int count();
     
 }

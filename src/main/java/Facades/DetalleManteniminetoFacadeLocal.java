@@ -6,7 +6,6 @@
 package Facades;
 
 import Entitys.DetalleMantenimineto;
-import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,20 +13,8 @@ import javax.ejb.Local;
  * @author fernando
  */
 @Local
-public interface DetalleManteniminetoFacadeLocal {
+public interface DetalleManteniminetoFacadeLocal extends AbstractInterface<DetalleMantenimineto>{
 
-    void create(DetalleMantenimineto detalleMantenimineto);
-
-    void edit(DetalleMantenimineto detalleMantenimineto);
-
-    void remove(DetalleMantenimineto detalleMantenimineto);
-
-    DetalleMantenimineto find(Object id);
-
-    List<DetalleMantenimineto> findAll();
-
-    List<DetalleMantenimineto> findRange(int[] range);
-
-    int count();
+ 
     
 }

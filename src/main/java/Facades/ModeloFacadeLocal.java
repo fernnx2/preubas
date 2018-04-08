@@ -6,7 +6,6 @@
 package Facades;
 
 import Entitys.Modelo;
-import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,20 +13,7 @@ import javax.ejb.Local;
  * @author fernando
  */
 @Local
-public interface ModeloFacadeLocal {
+public interface ModeloFacadeLocal extends AbstractInterface<Modelo>{
 
-    void create(Modelo modelo);
-
-    void edit(Modelo modelo);
-
-    void remove(Modelo modelo);
-
-    Modelo find(Object id);
-
-    List<Modelo> findAll();
-
-    List<Modelo> findRange(int[] range);
-
-    int count();
     
 }
