@@ -1,0 +1,5 @@
+FROM mysql
+ENV MYSQL_ROOT_PASSWORD=secret \
+    MYSQL_DATA_DIR=/var/lib/mysql
+COPY mantenimiento.sql /docker-entrypoint-initdb.d/
+VOLUME /home/fernando/Volumes/mysql:/var/lib/mysql
